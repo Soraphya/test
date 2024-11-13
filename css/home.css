@@ -1,0 +1,318 @@
+.home {
+    background-color: var(--black);
+    color: white;
+}
+
+.banner{
+    padding: 60px 0;
+    min-height: calc(100vh - 80px);
+}
+
+.banner.row{
+    /* background-color: tomato; */
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-home{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-image: url(../images/bg-home.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .5;
+    width: 70%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+
+    .banner .bg-home{
+        width: 100%;
+    }
+
+    
+}
+
+.apresentacao{
+    text-align: left;
+}
+
+
+
+.form-home{
+    border: 1px solid var(--white);
+    backdrop-filter: saturate(80%) blur(1rem);
+    box-shadow: var(--shadowViolet);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.form-home h4{
+    font-family: var(--exo);
+    font-size: 2em;
+
+    margin-bottom: 10px;
+}
+
+.form-home p{
+    font-family: var(--mono);
+    font-size: 1.1em;
+    color: var(--gray);
+
+    margin-bottom: 20px;
+}
+
+.form-home label{
+    font-family: var(--mono);
+    font-size: 1.3em;
+}
+
+.form-home input[type="text"],
+.form-home input[type="email"],
+.form-home textarea{
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+}
+
+.form-home input[type="text"]:focus,
+.form-home input[type="email"]:focus,
+.form-home textarea:focus{
+    border: 2px solid var(--black);
+    outline: none;
+}
+
+.form-home textarea{
+    height: 100px;
+    resize: none;
+}
+
+.form-home input[type="submit"]{
+    height: 40px;
+    background-color: var(--violet);
+    border: none;
+    color: var(--white);
+    font-size: 1.3em;
+    font-family: var(--mono);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-home input[type="submit"]:hover{
+    background-color: var(--black);
+}
+
+@media (max-width:768px) {
+
+    .apresentacao{
+        margin-bottom: 30px;
+    }
+    .banner .bg{
+        width: 100%;
+        top: -50px;
+    }
+
+    .form-home{
+        max-width: 100%;
+    }
+}
+
+
+/** CLIENTES  */
+
+.clientes{
+    background-color: var(--gray);
+    padding: 20px 0;
+}
+
+.clientes .row{
+    align-items: center;
+}
+
+.cliente img{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/** SERVICOS */
+
+.servicos{
+    padding: 60px 0;
+}
+
+.servico.row{
+    align-items: center;
+    padding: 40px 0;
+}
+
+.servico.row:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+
+
+.servico-info span{
+    font-family: var(--mono);
+    color: var(--violet);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.servico-img{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.servico-img:hover .image-hover{
+    display: block;
+}
+
+.servico-img:hover .image{
+    display: none;
+}
+
+.image{
+    transition: .5s;
+}
+
+
+
+.image-hover{
+    display: none;
+    transition: .5s;
+}
+
+@media (max-width:768px) {
+    .servico.row:nth-of-type(even){
+        flex-direction: column;
+    }
+    .servico-img{
+        padding:30px;
+    }
+}
+
+/** CTA Idea  */
+
+.cta-ideia{
+    background-color: var(--black);
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    text-align: left;
+}
+
+.bg-ideia{
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 0;
+    background-image: url(../images/idea.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    width: 70%;
+    height: 80%;
+}
+
+.cta-ideia .container{
+    height: 100% !important;
+}
+
+
+
+.cta-ideia .row{
+    align-items: center;
+    height: 100%;
+}
+
+
+@media (max-width:768px){
+    .cta-ideia .bg-ideia{
+        opacity: .2;
+    }
+}
+
+
+
+/** CTA Galery */
+
+.cta-galery{
+    background-color: var(--violet);
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+    text-align: left;
+}
+
+
+.cta-galery .bg{
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 0;
+    background-image: url(../images/team.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    width: 70%;
+    height: 80%;
+}
+
+
+
+.cta-galery a{
+    display: block;
+
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+
+    font-size: 1.3em;
+    font-family: var(--mono);
+    text-align: center;
+    line-height: 40px;
+
+    cursor: pointer;
+    
+}
+
+.cta-galery a:hover{
+    box-shadow: var(--shadowBlack);
+    
+}
+
+@media (max-width:768px){
+    .cta-galery .bg{
+        opacity: .2;
+    }
+}
+
+.cta-parceiro{
+    padding: 60px 0;
+}
+
+.cta-parceiro .row{
+   align-items: center;
+}
+
+
+
+
+
+

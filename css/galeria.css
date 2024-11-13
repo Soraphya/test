@@ -1,0 +1,49 @@
+.galery{
+    padding: 60px 0;
+}
+
+.galery h2{
+    padding: 10px 0;
+    font-size: 2em;
+    font-family: var(--exo);
+    color: var(--black);
+}
+
+.galery .flex{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.galery .flex-item{
+    max-width: calc(33% - 30px);
+    flex-grow: 1;
+}
+
+.template{
+    border: 2px solid var(--gray);
+    transition: .5s;
+    color: var(--black);
+}
+
+.template:hover{
+    border: 2px solid var(--violet);
+}
+
+.template .template-title{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2em;
+    font-family: var(--exo);
+    color: var(--violet);
+}
+
+.template .template-author{
+    padding: 10px 5px;
+    font-size: 1.2em;
+    font-family: var(--mono);
+    color: var(--gray);
+}

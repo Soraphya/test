@@ -1,0 +1,201 @@
+/** claro #ac2986 */
+/** escuro #702784 */
+
+.main{
+    position: relative;
+    background-color: rgb(220, 220, 220);
+}
+
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    padding-top: 60px;
+}
+
+.menu-desktop li{
+    text-align: center;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu-desktop i{
+    display: block;
+    font-size: 25px;
+    padding-top: 12.5px;
+    background-color: #ddd;
+    height: 50px;
+    width: 50px;
+    margin: 16px auto 0 auto;
+    border-radius: 50%;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+}
+
+.menu-desktop li.menu-active i{
+    background-color: #3fac2988;
+    color: #3d8427;
+}
+
+.menu-desktop li:hover i{    
+    background-color: #ac298788;
+    color: #702784;
+    transition: .2s;
+}
+
+.menu-desktop a{
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.3em;
+    color: rgb(30, 30, 30);
+    
+}
+
+.menu-mobile nav{
+    width: 100%;
+    position: relative;
+    top: 80px;
+    z-index: 3;
+}
+
+.menu-mobile a{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: block;
+    padding: 10px 0 10px 100px;
+    text-align: left;
+    color: rgb(30, 30, 30);
+    border-bottom: 1px solid black;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+.menu-mobile i{
+    margin-right: 20px;
+    width: 30px;
+}
+
+.menu-mobile a:hover{
+    background-color: #d38dbf;
+    color: #702784;
+}
+
+.menu-top{
+    position: fixed;
+    right: 20px;
+    top: 0;
+    height: 80px;
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    z-index: 10;
+}
+
+.menu-top span{
+    display: none;
+}
+
+.logomarca{
+    display: flex;
+    align-items: center;
+}
+
+.logomarca img{
+    height: 40px;
+}
+
+.logomarca p{
+    font-family: 'exo 2';
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(30, 30, 30);
+}
+
+.main-content{
+    position: absolute;
+    width: 80%;
+    right: 20px;
+    top: 100px;
+}
+
+@media (max-width:768px) {
+    .menu-desktop{
+        display: none;
+    }
+
+    
+
+    .menu-top,
+    .main-content{
+        width: 100%;
+        right: 0;
+    }
+
+    .menu-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
+    }
+
+    .logomarca p{
+        font-size: 1.2em;
+    }
+
+    .menu-top span{
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .js-menu-mobile{
+        display: none;
+    }
+    
+    .js-menu-mobile.active{
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        animation: menuMobile .5s forwards;
+    }
+    
+    @keyframes menuMobile{
+        from{
+            top: -200px;
+        }
+        to{
+            top: 0;
+            
+        }
+    }
+    
+}
+
+
+/** DADOS  */
+
+
+/** FINANCEIRO  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

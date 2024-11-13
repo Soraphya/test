@@ -1,0 +1,24 @@
+.bg-marketing{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background-image: url(../images/gestaoredes.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .3;
+    width: 70%;
+    height: 100%;
+}
+
+
+
+@media (max-width:768px) {
+
+    .banner .bg-marketing{
+        width: 100%;
+    }
+
+    
+}

@@ -1,0 +1,102 @@
+.sobre{
+    background-color: var(--black);
+    color: white;
+}
+
+.bg-sobre{
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 0;
+    background-image: url(../images/team.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .3;
+    width: 70%;
+    height: 80%;
+}
+
+.bg-ceo{
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 0;
+    background-image: url(../images/ceo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .3;
+    width: 70%;
+    height: 80%;
+}
+
+.team{
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.team .row{
+    align-items: center;
+}
+
+.team-violet{
+    background-color: var(--violet);
+}
+
+.team-profile{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-violet{
+    color: var(--white);
+}
+
+.team h2{
+    font-size: 2em;
+    font-family: var(--exo);
+}
+
+
+.team p{
+    font-size: 1.3em;
+    font-family: var(--mono);
+}
+
+.team .bg-marketing,
+.team .bg-ceo,
+.team .bg-tech,
+.team .bg-media{
+    top: 10%;
+    height: 80%;
+
+}
+
+@media (max-width:768px) {
+
+    .team-profile{
+        width: 150px;
+        height: 150px;
+    }
+    .team .row{
+        text-align: center;
+    }
+
+    .team .bg-marketing,
+    .team .bg-ceo,
+    .team .bg-tech,
+    .team .bg-media{
+        width: 80%;
+        left: 10%;
+
+    }
+
+    .team-profile{
+        margin: 10px auto;
+    }
+    
+}

@@ -1,0 +1,123 @@
+.bg-contato{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 15%;
+    background-image: url(../images/contato.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .5;
+    width: 70%;
+    height: 100%;
+}
+
+.form-contato{
+    border: 1px solid var(--white);
+    backdrop-filter: saturate(90%) blur(0.5rem);
+    box-shadow: var(--shadowViolet);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.form-contato h4{
+    font-family: var(--exo);
+    font-size: 2em;
+
+    margin-bottom: 10px;
+}
+
+.form-contato p{
+    font-family: var(--mono);
+    font-size: 1.1em;
+    color: var(--gray);
+
+    margin-bottom: 20px;
+}
+
+.form-contato label{
+    font-family: var(--mono);
+    font-size: 1.3em;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato textarea{
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+}
+
+.form-contato input[type="text"]:focus,
+.form-contato input[type="email"]:focus,
+.form-contato textarea:focus{
+    border: 2px solid var(--violet);
+    outline: none;
+}
+
+.form-contato textarea{
+    height: 100px;
+    resize: none;
+}
+
+.form-contato input[type="submit"]{
+    height: 40px;
+    background-color: var(--violet);
+    border: none;
+    color: var(--white);
+    font-size: 1.3em;
+    font-family: var(--mono);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-contato input[type="submit"]:hover{
+    background-color: var(--violet);
+}
+
+.contato-link{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;  
+}
+
+.contato-link a{
+    color: var(--gray);
+    text-decoration: underline;
+    font-family: var(--mono);
+    font-size: 1.3em;
+}
+
+.contato-link i{
+    padding-top: 9px;
+    min-width: 30px;
+}
+
+.contato-link a:hover{
+    color: var(--violet);
+}
+
+
+@media (max-width:768px) {
+
+    .bg-contato{
+        top: -20%;
+    }
+
+    .form-contato{
+        max-width: 100%;
+    }
+
+    .contato-link p{
+        display: none;
+    }
+    .contato-link i{
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+}
